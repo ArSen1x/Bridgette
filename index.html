@@ -199,30 +199,6 @@
             color: var(--white);
         }
 
-        /* Resume button styling */
-        .resume-btn {
-            display: inline-block;
-            background-color: #e74c3c;
-            color: white;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 4px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-            margin-top: 20px;
-            text-align: center;
-        }
-        
-        .resume-btn:hover {
-            background-color: #bd4343;
-        }
-
-        .center-btn {
-            text-align: center;
-            margin: 30px 0;
-        }
-        
-
         /* About Section */
         .about {
             background-color: var(--white);
@@ -420,7 +396,7 @@
         
         .project-link {
             display: inline-block;
-            background-color: #3498db;
+            background-color: #e74c3c;
             color: white;
             text-decoration: none;
             padding: 10px 20px;
@@ -430,7 +406,7 @@
         }
         
         .project-link:hover {
-            background-color: #2980b9;
+            background-color: #bd4343;
         }
         
         .project-actions {
@@ -439,35 +415,72 @@
             align-items: center;
             margin-top: 20px;
         }
-        
-        /* For embedded content like Figma */
-        .project-embed {
-            width: 100%;
-            margin-bottom: 15px;
-        }
-        
-        .project-embed iframe {
-            width: 100%;
-            height: 300px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            border-radius: 4px;
-        }
-        
-        /* Tags styling */
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
-        }
-        
+
+    
         .tag {
             background-color: #e0f7fa;
-            color: #0097a7;
+            color: #a7000065;
             padding: 5px 10px;
             border-radius: 20px;
             font-size: 0.8rem;
         }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 25px;
+          }
+          
+          .card-content h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 15px;
+          }
+          
+          .card-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+          }
+          
+          .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .tags {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          
+          .tag {
+            background-color: #ffdcdc;
+            border-radius: 20px;
+            color: #cc0000a5;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            padding: 6px 12px;
+          }
+          
+          .view-project-btn {
+            background-color: #e74c3c;
+            border-radius: 4px;
+            color: white;
+            display: inline-block;
+            font-weight: 500;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+          }
+          
+          .view-project-btn:hover {
+            background-color: #bd4343;
+          }
         
         /* Responsive adjustments */
         @media (max-width: 768px) {
@@ -745,8 +758,6 @@
                             <span class="skill-tag">Data Scientist</span>
                             <span class="skill-tag">Python</span>
                         </div>
-                        <div class="center-btn">
-                            <a href="#" class="resume-btn" download><i class="fas fa-download"></i> Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -766,10 +777,9 @@
             </div>
             
             <div class="education-item">
-                <h3>Web Development Bootcamp</h3>
-                <p class="school">Coding Dojo</p>
-                <p class="dates">Summer 2014</p>
-                <p>Intensive 12-week program focused on full-stack web development. Developed 5 full-stack applications and contributed to 3 team projects.</p>
+                <h3>Senior High School Graduate Science, Technology, Engineering and Mathematics (STEM) Strand</h3>
+                <p class="school">Davao Doctors College Inc.</p>
+                <p class="dates">May 2019</p>
             </div>
         </div>
     </section>
@@ -779,18 +789,48 @@
         <div class="container">
             <h2>Experience</h2>
             <div class="experience-item">
-                <h3>Junior Web Developer</h3>
-                <p class="company">StartUp Innovations</p>
-                <p class="dates">June 2015 - February 2017</p>
-                <p>Contributed to the development of a SaaS platform for small businesses.</p>
+                <h3>University Intern</h3>
+                <p class="company">University of Southeastern Philippines - College of Information and Computing</p>
+                <p class="dates">July 2024</p>
+                <p>Contributed to the development of AVR Booking System</p>
                 <ul>
-                    <li>Built interactive UI components using jQuery and Bootstrap</li>
-                    <li>Implemented responsive layouts and cross-browser compatibility fixes</li>
-                    <li>Assisted in API integration and front-end performance optimization</li>
-                    <li>Participated in daily stand-ups and biweekly sprint planning meetings</li>
+                    <li>Contributed to the planning of AVR Booking System</li>
+                    <li>Set-up Backend using laravel</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>No Code Ph Volunteer</h3>
+                <p class="company">No Code Ph</p>
+                <p class="dates">2023</p>
+                <p>Davao Volunteer to a No Code PH event</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>GDG Davao Creative Commitee International Women's Month 2024</h3>
+                <p class="company">Google Developer Group Davao</p>
+                <p class="dates">2024</p>
+                <p>Contributed to the development of creative promotional materials</p>
+                <ul>
+                    <li>Made social media postings with the provided assets</li>
+                    <li>Made Designs like stickers and shirt for IWD 2024 Merchandise</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>TedX Lanang Sponsor Experience Lead</h3>
+                <p class="company">TedX Davao</p>
+                <p class="dates">2024</p>
+                <p>Sponsorship Experience Lead in TedX Lanang</p>
+                <ul>
+                    <li>Focal person of the sponsor before and during the event</li>
+                    <li>Ensure that the sponsor will be catered as well as their concerns</li>
+                    <li>Assist the sponsors in their designated stalls during the event</li>
                 </ul>
             </div>
         </div>
+
+            
     </section>
 
     <!-- Services Section -->
@@ -803,14 +843,14 @@
                         <i class="fas fa-code"></i>
                     </div>
                     <h3 class="service-title">Front-End Developer</h3>
-                    <p>I create beautiful, user-friendly designs that engage visitors and effectively communicate your brand's message. My designs focus on creating exceptional user experiences.</p>
+                    <p>I transform design concepts into seamless, interactive web experiences through clean code and modern development practices.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-paint-brush"></i>
                     </div>
                     <h3 class="service-title">Graphic Designer</h3>
-                    <p>I create beautiful, user-friendly designs that engage visitors and effectively communicate your brand's message. My designs focus on creating exceptional user experiences.</p>
+                    <p>I create designs that aligns with the branding mix with the creativity and quality I uphold.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -827,33 +867,80 @@
     <section id="portfolio" class="portfolio section">
         <div class="container">
             <h2 class="section-title">My Portfolio</h2>
-            <div class="project-card">
-                <div class="project-item">
-                    <div class="project-content">
-                        <h2 class="project-title">E-commerce Website</h2>
-                        <p class="project-description">A fully functional e-commerce platform built with React and Node.js. Features include user authentication, product filtering, shopping cart functionality, and secure payment processing. This project demonstrates my full-stack development skills and attention to performance optimization.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <a href="#" target="_blank" class="project-link">View Project</a>
+            <div class="card">
+                <div class="card-content">
+                  <h2>Cloud Computing Proposed E-commerce Dashboard</h2>
+                  <p>A interactive prototype E-commerce dashboard inspired by popular online shopping platforms.</p>
+                  <div class="card-footer">
+                    <div class="tags">
+                      <span class="tag">Figma</span>
+                      <span class="tag">UI Prototype</span>
                     </div>
+                    <a href="https://www.figma.com/design/Zxyoxi5WbyEXElPDmAGdwz/Revised-CC-Final-(Copy)?node-id=0-1&t=YJ6Sa6U1NwOhyJJ2-1" 
+                    class="view-project-btn">View Project</a>
+                  </div>
                 </div>
-                
-                <!-- Project 3 with Just Link -->
-                <div class="project-item">
-                    <div class="project-content">
-                        <h2 class="project-title">Portfolio Website</h2>
-                        <p class="project-description">A personal portfolio website designed and developed from scratch using HTML, CSS, and JavaScript. The site features responsive design, smooth scrolling navigation, and interactive elements to showcase my projects and skills in an engaging way.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Responsive Design</span>
-                        </div>
-                        <a href="#" target="_blank" class="project-link">View Project</a>
+              </div>
+              
+              <div class="card">
+                <div class="card-content">
+                  <h2>LiCAS: Library Inventory System</h2>
+                  <p>A proposed library inventory system for catalouging academic books inside the Univesity of Southeastern Philippines.</p>
+                  <div class="card-footer">
+                    <div class="tags">
+                      <span class="tag">UI Prototype</span>
+                      <span class="tag">Figma</span>
                     </div>
+                    <a href="https://www.figma.com/design/rB8ok0UFnfczXuDCXVX0iA/LiCAS-Dasig?node-id=0-1&t=QKQEoNlztJJNUFqM-1" 
+                    class="view-project-btn">View Project</a>
+                  </div>
                 </div>
+              </div>
+
+              <div class="card">
+                <div class="card-content">
+                  <h2>Satori: Trading Mobile Application</h2>
+                  <p>A fully responsive prototype design for stock trading and educational platform.</p>
+                  <div class="card-footer">
+                    <div class="tags">
+                      <span class="tag">Figma</span>
+                      <span class="tag">UI/UX Design</span>
+                    </div>
+                    <a href="https://www.figma.com/design/JAiTTHljyG9gEgEJSyH9gg/Mobile-app-ui?node-id=0-1&t=v3IaKI5CZ0K6Kdai-1" class="view-project-btn">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-content">
+                  <h2>Orchid Funeral Services Web Dashboard</h2>
+                  <p>A proposed web dashboard design for catering funeral services through online tracking and booking.</p>
+                  <div class="card-footer">
+                    <div class="tags">
+                      <span class="tag">Figma</span>
+                      <span class="tag">UI/UX Design</span>
+                    </div>
+                    <a href="https://www.figma.com/design/nxU2PETTcSXQyG8GbdoNLL/UI-Orchid-Funeral-Services-Project?node-id=401-24&t=7xvumDe1uzXresLU-1" 
+                    class="view-project-btn">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-content">
+                  <h2>GDG IWD Graphic Designs</h2>
+                  <p>Contributed to the promotional and merchandise for the event.</p>
+                  <div class="card-footer">
+                    <div class="tags">
+                      <span class="tag">Figma</span>
+                      <span class="tag">Graphics Design</span>
+                    </div>
+                    <a href="https://www.figma.com/design/a27teoJsA2PnqP7kYsdS1a/IWD-Moodboard?node-id=0-1&t=f4x3FIdKSuhEGL1R-1" 
+                    class="view-project-btn">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
         </div>
     </section>
@@ -901,7 +988,6 @@
         <div class="container">
             <div class="social-links">
                 <a href="https://www.facebook.com/bnc.m020218/" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/ArSen1x" class="social-link"><i class="fab fa-github"></i></a>
             </div>
             <p class="copyright">&copy; 2025 Bridgette. All Rights Reserved.</p>
